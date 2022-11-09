@@ -1,6 +1,7 @@
 1.  JS-ERROR-T-ERROR-VS-IF-1 (1 point)
 
     In your operations logic, when should you use if statements and when error handling? Give a justified explanation.
+
         When if statement can return valid result all the times it can be used. In case of 'index out of bounds' possibility I
         would first try the statement and then write error handling for 'index out of bounds' cases. Otherwise my program will fail at error.
 
@@ -13,7 +14,7 @@
     If the function is called with non-integer argument, then an error with a message “Non-integer argument year error” is thrown.
     In this case, write the try-catch statement inside the function and output the error message on the console.
 
-    Please note that an argument value 0 should not be considered as an error.
+    Please note that an argument value 0 should not be considered as an error. -> leapYear.html
 
 3. JS-ERROR-P-LEAPYEAR-2 (1 point)
 
