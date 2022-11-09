@@ -1,0 +1,100 @@
+1.  JS-FUNCTION-P-LEAPYEAR-1 (2 points)
+
+    Write the function isLeapYear according to ES5 standard. Use a function declaration.
+
+    The function takes a year to be checked as a parameter.
+
+    The function returns true if the given parameter value is a leap year and false if it is not a leap year.
+
+    It should be noted that leap years must meet the following two conditions at the same time: 1) when the year is divided by four,
+    the remainder is zero, and 2) (when the year is divided by one hundred, the remainder is not zero) or
+    (when the year is divided by four hundred, the remainder is zero).
+
+    Fill a year into a textbox on a web page. Call the function by clicking the button Check year and display
+    (by utilizing another function) "Year xxxx is a leap year" or "Year xxxx is not a leap year" in a div below. The xxx is the filled in year.
+
+    WE WILL PROGRAM THIS TOGETHER. -> leapYear.html
+
+
+2. JS-ARRAY-P-CONTAINS-NUMBER-1 (1 point)
+
+    Implement the function containsNumber according to ES5 standard. However, use this time a function expression.
+
+    The functions takes two arguments. The first argument is numbers, which is an array of numbers. The second argument is aNumber,
+    which is the number to search.
+
+    An example of one possible elements array:
+
+    [6,4,2,5,9,7,5,7,2]
+
+    The function returns true, if the array contains the number given in aNumber. Otherwise the function returns false.
+
+    Display the result on the web page as in JS-FUNCTION-P-LEAPYEAR-1. This time the result text should be like “Array contains
+    the number x” or “Array doen’t contain the number x”. -> arrayContainsNumber.html
+
+
+3. JS-FUNCTION-P-CONVERT-TO-MINUTE-FORMAT-1 (2 points)
+
+    Write the function convertToMinutesFormat. Use this time an arrow function introduced in ES6.
+
+    The function takes a hoursInHundredths as a parameter. The function should able to handle a parameter value that is given in one
+    of the following formats: x.xx, xx.xx, x,xx or xx,xx.
+
+    Example parameter values: 3,40, 03.20, 0.15, 14.80.
+
+    The function returns hours and minutes in one of the following formats: h:mm or hh:mm.
+
+    From the above example parameter values the function returns: 3:24, 3:12, 0:09, 14:48.
+
+    Fill an hour time to convert into a textbox on a web page. Call the function by clicking the button “Convert to Minutes” and
+    display the result like (by utilizing another function) "3,20 hours is in hours and minutes equal to 3:12"
+
+    Take care of the necessary rounding of minutes. -> convertToMinuteFormat.html
+
+
+4. JS-FUNCTION-T-UNDERSTAND-LIBRARY-FUNCTIONS-1 (1 point)
+
+    Search a good JavaScript reference from the Net. This time we focus on functions handling arrays.
+
+    a.      What is the url of the reference you found?
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+    b.      What does it mean that an operation mutates an array in place? (0,5 points)
+            The operation change the original array instead of creating mutated copy.
+
+    c.      What does it mean then an operation returns a copy of an array? (0,5 points>
+            The operation has taken a copy of original array and perform actions to the copy without changing original.
+
+
+5. JS-OBJECT-P-BASICS-1 (2 point)
+
+    This time we concentrate on object literals. Write code clips to
+
+    a.      Create an object book containing the following properties: isbn, name, authors, publicationDate. (0,5 points)
+
+    b.      Add the following methods with the following names to the book object: getAuthors, setAuthors, getIsbn, setIsbn. (0,5 points)
+
+    c.      Create two book objects. Compare if they model the same book. You can use the value of the field isbn as comparison
+            criteria in defining equality: Same isbn value, same book. (0,5 points) -> objectBasics.js
+
+    d.      Create two book objects with exactly the same values in all the features. Do they have the same identity? (0,5 points)
+            No. Each object is created anew thus they differ in their identity. This can be tested with simple {}==={} -operation between two objects.
+
+
+6. JS-OBJECT-P-CONVERT-OUNCES-TO-GRAMS-1 (2 points)
+
+    Write the function convertOuncesToGrams. You can use ES6 standard features.
+
+    The function takes measurements as a parameter.
+
+    The measurements parameter is an array containing objects.
+
+    An example of the value of the measurements parameter:
+
+    [{ batchid: 434, unit: “ounce”, weight: 12.21 }, {batchid: 414, unit: “gram”, weight: 199.54 },{ batchid: 522, unit: “ounce”, weight: 18.88 }]
+
+    The function returns an array where all the measurements are in grams. Like the following:
+
+    [{ batchid: 434, unit: “gram”, weight: 346.15 }, {batchid: 414, unit: “gram”, weight: 199.54 },{ batchid: 522, unit: “gram”, weight: 535.24 }]
+
+    Please, give the results with two digits. -> convertOuncesToGrams.js

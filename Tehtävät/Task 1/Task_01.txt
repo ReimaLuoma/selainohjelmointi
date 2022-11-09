@@ -1,0 +1,92 @@
+1. JS-GENERAL-T-BASICS-1.
+
+Explain the following JavaScript code clips in your own words.
+Tell what is the value of variable currentPort in part e.
+What does the part f print on the console? (2 pts):
+
+a.      “intomieli”
+        Quotations are use to declare string type variable.
+        In this instance actual variable is not defined but one could insert "intomieli" into one i.e. let x = "intomieli"                      
+
+b.      ==  
+        Double equal sign is used to compare two values.
+        This does not take in consideration the type of the value i.e. "3" == 3 would return true.                                 
+
+c.      ===
+        Triple equal sign does same as double version
+        except it also checks the type of the values and compare those too i.e. "3" === 3 would return false.                                          
+
+d.      “Se” + “ “ + “on” + “ “ + “totta” + “.”;
+        Items inside quotations are strings and empty quotations with space will result actual space.
+        The addition sign will add values surrounding it together. In this case the end result will print out: Se on totta.
+
+e.      var port = 3001; var currentPort = port || 3000;
+        Two variables are declared; port and currentPort.
+        The currentPort can be port OR 3000. Double vertical lines mark OR operator in js.
+        The value of currentPort is 3001 as it is first to return true in the statement.
+
+f.       var saldo = 0;
+           if (saldo) {
+               console.log(“Rahaa on”);
+          } else {
+               console.log(“Rahaa ei ole”);
+          }
+
+          Print out: Rahaa ei ole. The variable saldo is 0. When saldo is checked as true/false statement the 0 value translates as false.
+
+
+2. JS-GENERAL-T-BASICS-2.
+Look at the following code clip. Does it work? If not, why, and how could you fix it? (2 pts):
+
+let number = 5;
+const cNumber = 5;
+console.log(number * cNumber);
+cNumber = 6;
+console.log(number * cNumber);
+
+It does not work. Reason being the cNumber is a constant variable.
+This type of variables cannot be re-declared once declared i.e. cNumber = 6; will not change the value.
+Easy fix would be changing the const to let or var type. That is if const ins't required as type for this variable.
+
+
+3. JS-GENERAL-P-BASICS-1.
+Write the following programs. Use loops. Include source code and screenshots from results (2 pts):
+
+a. Output even numbers from 20 to 200 to console. (1 point) -> Loopy.js
+
+b. Sum items from array deposits while the sum is less than 100.
+(Add the following deposit to sum if the sum of deposits is before addition less than 100.)
+Here on possible example of an array: deposits = [ 12.11, 34.22, 31.95. 50.00, 22.50, 200.00 ] (1 point) -> ArraySum.js
+
+
+4. JS-GENERAL-P-BASICS-2.
+Make exercise “FizzBuzz” from book (Exercises, chapter 2).  (2 pts) -> FizzBuzz.js
+
+
+5. JS-ARRAY-T-BASICS-2 (1 point)
+
+a. Can the same array contain numbers and objects at the same time?
+Yes.
+
+b. Give one example of a method of an Array object that modifies the array in place,
+and one example of a method that modifies a copy (returns a modified copy of the array).
+
+numbers[2].sort() -> sorts elements in place and return sorted reference.
+numbers[2].toUpperCase(); -> returns copy of the element in upper case.
+
+c. When checking the length of an array, are you utilizing an attribute of an array or a method of an array?
+
+arr.lenght is property of an array. When used one is utilizing an attribute of an array.
+
+
+6. JS-ARRAY-P-ARRAY-PROPERTIES-1 (2 points)
+
+Lets have an array distances = [ 165, 626, 148, 12, 81, 181 ].
+
+a. Write a code clip that returns the length of the array. (0,5 points)
+
+b. Write code clip that adds the distances 8, 533 and 76 into the end of the array and in this order.
+One distance at a time. Use one the array methods. (0,5 points)
+
+c. Write a code clip that removes the number 148 from the array. Use array methods.
+A tip: One of the methods to use could be splice. (1 points) -> ArrayProperties.js
