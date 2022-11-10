@@ -8,20 +8,32 @@
 
     <script>
 
+        function tryIsLeapYear(year){
+            try {
+                console.log(year);
+                if(year == null || year == ""){
+                    //throw new Error("Missing argument year error");
+                    return { error: true, msg: "Missing argument year error" };
+                }
+
+                if(isNaN(parseFloat(year))){
+                    //throw new Error("Non-integer argument year error");
+                    return {error: true, msg: "Non-integer argument year error"};
+                }
+
+                return false;
+
+            } catch (error) {
+                //console.log(error);
+            }
+        }
+
         function isLeapYear(year){
 
-            try {
+            let errorTest = tryIsLeapYear(year);
 
-                if(year == null || year == ""){
-                    throw new Error("Missing argument year error");
-                }
-
-                if(isNaN(parseInt(year))){
-                    throw new Error("Non-integer argument year error");
-                }
-                
-            } catch (error) {
-                console.log(error);
+            if(errorTest.error){
+                throw new Error(errorTest.msg);
             }
 
             if(year %4 == 0 && year %100 != 0 || year %400 == 0){

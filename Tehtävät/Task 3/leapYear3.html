@@ -8,10 +8,9 @@
 
     <script>
 
-        function isLeapYear(year){
-
+        function tryIsLeapYear(year){
             try {
-
+                
                 if(year == null || year == ""){
                     throw new Error("Missing argument year error");
                 }
@@ -19,10 +18,15 @@
                 if(isNaN(parseInt(year))){
                     throw new Error("Non-integer argument year error");
                 }
-                
+
             } catch (error) {
                 console.log(error);
             }
+        }
+
+        function isLeapYear(year){
+
+            tryIsLeapYear(year);
 
             if(year %4 == 0 && year %100 != 0 || year %400 == 0){
                 document.getElementById("returnStatement").innerHTML = "Year " + year + " is a leap year."
