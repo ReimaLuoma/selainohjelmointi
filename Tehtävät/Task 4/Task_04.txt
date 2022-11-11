@@ -1,0 +1,60 @@
+1.      HTML DOM (2 points)
+
+        a.      What is HTML DOM? (0,5 points)
+
+                DOM or Document Object Model is system that can be seen as object oriented programming of the website.
+                Each object contains certain items and the system help us to interract with those objects.
+                The documentElement property is the global object through which we can access or inner elements of the webpage.
+
+        b.      What JavaScript can do to web pages by utilizing HTML DOM? (0,5 points)
+
+                Javascript can use HTML DOM just like any other object in programming.
+                It can use DOM to navigate, manipulate and create elements of the page.
+
+        c.      List and shortly explain at least three different kind of HTML Node types? (0,5 points)
+
+                head - contains metadata of the page. This is not displayed to user.
+                body -  contains the displayed elements of the page to user.
+                p - paragraph contains block of text.
+
+        d.      Criticize HTML DOM. (0,5 points)
+                HTML DOM as standard should help to interract with it but instead it creates programming like doppelgangers
+
+                that lack the actual features of the real node in actual programming languages. Take in example the array-like object: it looks and feels like an array
+                but you cannot interract it with full feature set of array related commands. This creates additional work to and slows programming down.
+                As a standard the HTML DOM should take action to fix these kind of inconsistencies instead of aiming to be language neutral interface.
+
+2.      List and explain different ways to attach event handlers in JavaScript. What are the pros and cons of each of them? (1 point)
+
+        addEventListener - can "listen" for many different kinds of events. Usually require the type of event as an argument.
+        If same node has multiple events fired at the same timethe default order of execution is from inner to outer object.
+        This is called bubbling. This can be reversed with and argument to eventlistener. Outer to inner order is called capturing.
+
+3.      Create an application that makes it possible to add messages on the web page.
+        The web page displays a text area into which a new message can be written.
+        The web page also displays a button “Add a new message!” that can be used to add a new message on the page.
+        The message is added as a new paragraph on the page below the text area and the button when the button is clicked.
+        The new message doesn’t replace the old ones already on the page. (2 points)
+
+        We’ll do this together during the lesson.
+        -> messages.html & messages.js
+
+4.      Create a page with 3 buttons. Layout is not important. When button 1 is pressed, background of a page should change to blue, button 2 changes it to gray and button 3 resets background to white (2 pts)
+
+5.      Related to event handlers, answer 2 out of the following 3 questions. (1 point)
+
+        a.      Why would you sometimes like to control event propagation? (0,5 points)
+
+                We might like to have upper element do something before the inner element does with one click.
+                Like flash green as acception and then submit the inner element with animation once flash is finished.
+
+        b.      Why would you sometimes like prevent a default action? (0,5 points)
+
+        c.      What is debouncing an event? (0,5 points)
+
+                Events are executed in order and if we have multiple events with demanding execution time firing
+                at very fast speed the website might start to slow down. To counter this from happening we can limit the executions frequency of the events
+                by adding setTimeout. Now events need to wait the timeout time before they can fire new event. This is called debouncing an event.
+
+6.      Make exercise “Balloon” from book (Exercises, chapter 15).  (2 pts)
+        -> balloon.html & balloon.js

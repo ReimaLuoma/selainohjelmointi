@@ -93,3 +93,5 @@
     YUT-020
 
     WWW-100
+
+    -> buildRegister.html
