@@ -24,7 +24,12 @@
 
         c.      Text area for free feedback
 
+        -> form.html
+
 3.      Explain how you prevent a form submission using JavaScript and why would you do that? Give also a simple code example (2 pts).
+
+        First of all we prevent default functionality with preventDefault method. This allows as to verify given data before sending.
+        We also can throw a warning if user has forgot to answer certain field. -> form.js
 
 4.      What means local storage related to JavaScript? How could you use it? Write an example code that (2 pts)
 
@@ -36,4 +41,8 @@
 
         d.      Demonstrate by refreshing window…
 
+                -> local.html
+
 5.      Make exercise “Content negotiation” from book (Exercises, chapter 18).  (2 pts)
+
+        -> negotiation.html && negotiation.js

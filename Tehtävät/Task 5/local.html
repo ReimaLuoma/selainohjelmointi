@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="note">Your note:</label><br/>
+    <input type="text">
+
+    <script>
+        let fieldInput = document.querySelector("input");
+
+        //input to localStorage on blur
+        fieldInput.addEventListener("blur", event => {
+            localStorage.setItem("note", JSON.stringify(fieldInput.value));
+        })
+
+        //read localStorage on window load
+        window.addEventListener("load", event => {
+            fieldInput.value = localStorage.getItem("note")
+        })
+    </script>
+</body>
+</html>
