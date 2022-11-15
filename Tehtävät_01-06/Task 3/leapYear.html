@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function isLeapYear(year){
+
+            try {
+
+                if(year == null || year == ""){
+                    throw new Error("Missing argument year error");
+                }
+
+                if(isNaN(parseInt(year))){
+                    throw new Error("Non-integer argument year error");
+                }
+                
+            } catch (error) {
+                console.log(error);
+            }
+
+            if(year %4 == 0 && year %100 != 0 || year %400 == 0){
+                document.getElementById("returnStatement").innerHTML = "Year " + year + " is a leap year."
+            }
+            else{
+                document.getElementById("returnStatement").innerHTML = "Year " + year + " is not a leap year."
+            }
+        }
+    
+    </script>
+
+</head>
+<body>
+    <div>
+        <label for="year">Year:</label><br>
+        <input id="givenValue" type="text" placeholder="2022" value="">
+        <button type="button" onclick="isLeapYear(givenValue.value)">Check year</button>
+    </div>
+    <div id="returnStatement">
+    </div>
+</body>
+</html>

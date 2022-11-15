@@ -1,0 +1,124 @@
+1.  JS-MODULE-T-1 (1 point)
+
+    a. What are modules in JavaScript?
+
+        Small programs that clearly state their dependencies to other programs and what parts it expose to other programs to use.
+
+    b. What kinds of benefits can modules provide?
+
+        They are usually clearly defined and easy to understand and read. Their main benefit is their reusability.
+
+2. JS-MODULE-T-2 (1 point)
+
+    Explain the code lines from two different modules.
+
+    const {days, months} = require("date-names");  --> date-names module is required for this module to function properly. Can be called anywhere inside the program.
+
+    import {days, months} from "date-names";  --> import refers only to ES modules and run only in beginning of the file. They cannot be called conditionally.
+
+3. JS-MODULE-P-ES6 (2 points)
+
+    Create an ES6 module PriceList. The PriceList module publishes two operations: setPriceList and getPrice. The setPriceList operation accepts one argument: thePriceList. You can see the form of the argument in the example below.
+
+    [   
+
+    {
+
+        itemid: 1,
+
+        itemname: ‘bottle’,
+
+        prices: [{ qty: 1, price: 1.25},{ qty: 100, price: 1.10},{ qty: 1000, price: 1.00}]
+
+    },
+
+    {
+
+        itemid: 2,
+
+        itemname: ‘glass’,
+
+        prices: [{ qty: 1, price: 2.50},{ qty: 50, price: 2.00},{ qty: 200, price: 1.60}]
+
+    }
+
+    ]
+
+    The setPriceList operation assigns the given pricelist array into the module’s private variable priceList. Please note that the qty in the pricelist is the minimum quantity that must be bought to get the item with a related unit price.
+
+    You can use the pricelist shown above, but please certain to add at least on more item and its prices to it.
+
+    The getPrice operation returns the total price of the quantity of the item. It accepts two arguments: itemId and quantity. For example, by using the pricelist shown above the function call getPrice(2, 150) returns 300.00.
+
+    Import the ES6 module to another JavaScript file, set the pricelist, and call the getPrice operation several times with different products and quantities.
+
+    -> pricelist_caller.js & Pricelist.mjs & package.json             
+
+4. JS-MODULE-P-COMMONJS (2 points)
+
+    Repeat the task JS-MODULE-P-ES6 above, but this time use CommonJS module. -> nope
+
+5. JS-PROMISE-T-1 (2 points)
+
+    Answer shortly for the following questions:
+
+    a.      What is the idea of using promise objects in JavaScript?
+            Promise provides temporary way to keep demanding functioninality working while the real stuff is being produced.
+
+    b.      How does the promise object move to state fulfilled?
+            It tries the given executor function and once it receives result from the function it passes the value on. In case of error Promise provides rejection with the error.
+
+    c.      How do you chain handler functions to a promise object so that they are run one after another?
+            Once the first object resolves we can call .then()-functionality as following function.
+
+    d.      How do you attach a handler function that is performed in a case of a rejected promise?
+            In case the object returns error we can handle it by adding .catch() -functionality to the end of the object.
+
+6. JS-PROMISE-P-1 (2 points)
+
+    This task will be done together with the instructor during one of the contact lessons.
+
+    The idea is to get some insight to the basics of JavaScript promises and AJAX by programming together the example below.
+
+    const getMembers = count => //XXXXXXXXXXXX
+
+    
+
+        const apiUrl = `https://api.randomuser.me/?nat=FI&results=${count}`;
+
+        const request = new XMLHttpRequest();
+
+        request.open('GET', apiUrl);
+
+        request.onload = () => (request.status === 200) ?
+
+    //XXXXXXX
+
+        request.onerror = //XXXXXXXXXXXXXXXXX
+
+        request.send();
+
+    })
+
+    var displayFiveFinnishFakeMembers = () => {
+
+    //We’ll implement this!
+
+    }
+
+    
+
+    function initiateApplication() {
+
+        var requireBtn = document.querySelector('#b1');
+
+        requireBtn.addEventListener('click', displayFiveFinnishFakeMembers);
+
+    }
+    
+
+    window.addEventListener('load', () => {
+
+        initiateApplication();
+
+    });

@@ -1,0 +1,97 @@
+1.  JS-ERROR-T-ERROR-VS-IF-1 (1 point)
+
+    In your operations logic, when should you use if statements and when error handling? Give a justified explanation.
+
+        When if statement can return valid result all the times it can be used. In case of 'index out of bounds' possibility I
+        would first try the statement and then write error handling for 'index out of bounds' cases. Otherwise my program will fail at error.
+
+2. JS-ERROR-P-LEAPYEAR-1 (2 points)
+
+    In the practical exercise 2 the task 1 (JS-FUNCTION-P-LEAPYEAR-1) was to program a function isLeapYear. The function accepted one argument year.
+
+    Develop this function further so that it can throw two different kinds of errors when called incorrectly.
+    If the function is called without a parameter, then an error with a message “Missing argument year error” is thrown.
+    If the function is called with non-integer argument, then an error with a message “Non-integer argument year error” is thrown.
+    In this case, write the try-catch statement inside the function and output the error message on the console.
+
+    Please note that an argument value 0 should not be considered as an error. -> leapYear.html
+
+3. JS-ERROR-P-LEAPYEAR-2 (1 point)
+
+    Return to the task above. Change the implementation so that the try-catch is moved to an enclosing operation tryIsLeapYear.
+    The errors are still thrown inside the isLeapYear operation. -> leapYear2.html
+
+4. JS-ERROR-P-LEAPYEAR-3 (1 point)
+
+    Return to the task above and change the implementation so that also throwing the error is done in the enclosing operation tryIsLeapYear.
+    -> leapYear3.html
+
+5.  JS-ERROR-T-ERROR-COMPARE-FUNCTIONS-1 (1 point)
+
+    Compare the ways of handling errors above. What are main differences when writing and using them.
+
+        First and third ways seem the most easy to write and manage as the whole functionality of error testing happen in single function.
+        The second way of testing in one function and throwing errors in another seems redundant due to the fact whole thing can be
+        done in single function instead.
+
+6. JS-REGEX-T-EXPLAIN-1 (2 points)
+
+    Explain shortly:
+
+    a. How regular expressions consume their input? (What is the mechanism of matching?)
+        Regex comsume only string with regular characters. Special characters can be used but need backlash to turn them to comsumable form.
+
+    b. What do parentheses around any part of the regular expression cause?
+        Parentheses creates a group.
+
+    c. What is the difference between lazy matching and greedy matching in regular expressions?
+        In Greedy mode regex finds all cases that match and then moves from end towards the start until it has found enough as described by quantifier.
+        This can lead to unintended matches at times when there are multiple possible matches in material.
+
+        In Lazy mode regex finds first match and moves forward to next match. It goes one by one instead of first going
+        through whole material and working backwards like Greedy does.
+
+    d. When do you need to use RegExp constructor like new RegExp() instead of regular expression literal like / /?
+
+        Constructor is needed when material contains regular string that has special characters that can be ignored.
+
+7. JS-REGEX-P-BUILD-REGISTER-NUMBER-1 (2 points)
+
+    Develop a function buildRegisterNumber so that it can throw two different kinds of errors when called with incorrect argument values.
+    The function takes two arguments: theLetters and theDigits. If the value of theLetters argument is not valid, then an error
+    with a message “Invalid register number letters” is thrown. If the value of theDigits argument is not valid, then an error with
+    a message “Invalid register number digits” is thrown. In case the arguments are valid, then a valid register number is returned.
+
+    Use regular expressions to validate the argument values.
+
+    Let’s agree that a valid register number obeys the following rules
+
+    ·        there are from two to three uppercase letters before a dash
+
+    ·        the letter W is not allowed
+
+    ·        a dash
+
+    ·        there are from one to three digits after the dash
+
+    ·        no leading zeros are allowed (no zeros before first non-zero digit)
+
+    
+
+    Examples of valid register numbers:
+
+    AX-12
+
+    UUI-6
+
+    GFS-200
+
+    Examples of invalid register numbers:
+
+    X-100
+
+    YUT-020
+
+    WWW-100
+
+    -> buildRegister.html

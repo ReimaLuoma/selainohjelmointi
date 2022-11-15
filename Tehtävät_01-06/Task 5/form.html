@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <form action="questionary">
+        <!--User contact information-->
+        <label for="Surname">Surname</label><br/>
+        <input type="text"><br/>
+
+        <label for="First Name">First name</label><br/>
+        <input type="text"><br/>
+
+        <label for="Address">Address</label><br/>
+        <input type="text"><br/>
+
+        <label for="Phone number">Phone number</label><br/>
+        <input type="text"><br/>
+
+        <label for="Email">Email</label><br/>
+        <input type="text"><br/><br/>
+
+        <!--Questions-->
+        <label for="gender">Gender</label><br/>
+        <input type="radio" name="gender" value="1"><label for="male">Male</label><br/>
+        <input type="radio" name="gender" value="2"><label for="female">Female</label><br/>
+        <input type="radio" name="gender" value="3"><label for="other">Other</label><br/>
+        <br/>
+        <label for="income">Income Range</label><br/>
+        <input type="radio" name="income" value="1"><label for="zero to 10k">0 - 10 000 €</label><br/>
+        <input type="radio" name="income" value="2"><label for="10 to 25k">10 001 - 25 000 €</label><br/>
+        <input type="radio" name="income" value="3"><label for="over 25k">25 0001 € or more</label><br/>
+        <br/>
+        <label for="drink">Drink</label><br/>
+        <input type="radio" name="drink" value="1"><label for="coffee">Coffee</label><br/>
+        <input type="radio" name="drink" value="2"><label for="tea">Tea</label><br/>
+        <input type="radio" name="drink" value="3"><label for="cold drink">Cold Drink</label><br/>
+        <br/>
+        <label for="time">Time of Day</label><br/>
+        <input type="radio" name="time" value="1"><label for="morning">Morning</label><br/>
+        <input type="radio" name="time" value="2"><label for="midday">Midday</label><br/>
+        <input type="radio" name="time" value="3"><label for="afternoon">Afternoon</label><br/>
+        <br/>
+        <label for="friends or alone">Friends or Alone</label><br/>
+        <input type="radio" name="friends" value="1"><label for="friends">Friends</label><br/>
+        <input type="radio" name="friends" value="2"><label for="alone">Alone</label><br/>
+        <br/>
+
+        <!--Feedback-->
+        <label for="feedback">Feedback</label><br/>
+        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea><br/><br/>
+
+        <!--Submit-->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

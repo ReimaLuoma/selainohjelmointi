@@ -1,0 +1,48 @@
+1.      Answer to following questions (2 pts):
+
+        a.      Compare different HTTP methods? Explain also how they should be used.
+
+                GET - should be used to get specified resource
+                DELETE - to be used to delete specified resource on server
+                PUT - can create or replace resource on server
+                POST - information to the resource on server i.e. edit text on .html file on server
+
+        b.      You have seen the HTTP response code 404. What it means and what are the possible reasons for that?
+
+                404 - request doesn’t find specified resource on the server i.e. requested .html file doesn’t exist.
+
+        c.      Explain HTTP sandboxing
+
+                HTTP sandboxing is a security protocol. It prevents scripts making requests to other sites through our browser.
+                When reason to access another domain is ok that domain can have target domain allow access from current site to target.
+
+2.      Create a form for data collection. Form should have inputs for: (2 pts)
+
+        a.      User contact information
+
+        b.      5 questions where user chooses numeric value between 1-3 using radio input (hint: grouping)
+
+        c.      Text area for free feedback
+
+        -> form.html
+
+3.      Explain how you prevent a form submission using JavaScript and why would you do that? Give also a simple code example (2 pts).
+
+        First of all we prevent default functionality with preventDefault method. This allows as to verify given data before sending.
+        We also can throw a warning if user has forgot to answer certain field. -> form.js
+
+4.      What means local storage related to JavaScript? How could you use it? Write an example code that (2 pts)
+
+        a.      has one input for text
+
+        b.      on blur-event writes contents in the local storage
+
+        c.      another code reads it when window is loaded
+
+        d.      Demonstrate by refreshing window…
+
+                -> local.html
+
+5.      Make exercise “Content negotiation” from book (Exercises, chapter 18).  (2 pts)
+
+        -> negotiation.html && negotiation.js

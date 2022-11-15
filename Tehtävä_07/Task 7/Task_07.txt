@@ -1,0 +1,35 @@
+1.  JS-REACT-T-1 (1 point)
+
+    What is React?
+    
+    React is a javascript library to create interactive user interfaces. It is declarative, efficient and flexible. It is developed by Facebook.
+
+2. JS-REACT-P-HELLO-WORLD-1 (1 point)
+
+    Make your first React.js application that renders the following greeting to a web page as h2 element:
+
+                        Hello Brave World!
+
+3. JS-REACT-P-CREATEELEMENT-1 (2 points)
+
+    Develop a web application that renders an h2 header and an unordered list with their list items. You can see the result in the picture on the right. Use multiple createElement operation calls like in the example in the book. Please note that all the unordered list items belong to a class called single-threat.
+
+4. JS-REACT-P-CREATEELEMENT-2 (2 points)
+
+    Modify the code of the JS-REACT-P-CREATEELEMENT-1 task above so that you fill the list item values by using an array sqlsThreats instead of hardcoding the strings. Use JavaScript’s Array.map function. Add also the key properties. Check browser console for possible warnings. You can search help from the book example listings.
+
+5.  JS-REACT-T-2 (1 point)
+
+    What are?
+
+    a.      react elements
+
+    b.      react components
+
+6. JS-REACT-P-COMPONENTS-1 (2 points)
+
+    Create React.js component ThreatList using a function.  Pass the sqlThreats to this components as a property.
+
+7.  JS-REACT-T-RENDERING-1 (1 point)
+
+    What does it mean that ReactDOM.render works smart?

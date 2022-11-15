@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function ValidateInput(input){
+            if(/[^Wa-z\s]{2,3}-[1-9]{1}(\d{1,2})?/.test(input)){
+                document.getElementById("returnStatement").innerHTML = "Valid register number.";
+            }else{
+                document.getElementById("returnStatement").innerHTML = "Invalid register number.";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <label for="regNum">Register number: </label><br/>
+        <input id="givenValue" type="text" placeholder="i.e. ABC-123" value="">
+        <button type="submit" onclick="ValidateInput(givenValue.value)">Submit</button>
+    </div>
+    <div id="returnStatement"></div>
+</body>
+</html>
