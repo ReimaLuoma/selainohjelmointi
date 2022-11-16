@@ -11,3 +11,20 @@ export function SqlElement() {
     )
   )
 }
+
+let sqlsThreats = [
+  "String injection",
+  "Numeric injection",
+  "Blind injection"
+]
+
+export function SqlElementArray(){
+  return(
+    React.createElement(
+      "ul",
+      null,
+      sqlsThreats.map((item, i) =>
+        React.createElement("li", { key: i }, item))
+    )
+  )
+}

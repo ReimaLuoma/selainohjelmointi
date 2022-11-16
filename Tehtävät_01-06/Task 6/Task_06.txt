@@ -76,6 +76,8 @@
 
 6. JS-PROMISE-P-1 (2 points)
 
+    -> promise.js
+
     This task will be done together with the instructor during one of the contact lessons.
 
     The idea is to get some insight to the basics of JavaScript promises and AJAX by programming together the example below.

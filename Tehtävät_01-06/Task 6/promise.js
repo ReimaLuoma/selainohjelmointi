@@ -1,42 +1,34 @@
-const getMembers = count => //XXXXXXXXXXXX
+const getMembers = count => {
 
-    
+    const apiUrl = `https://api.randomuser.me/?nat=FI&results=${count}`;
 
-        const apiUrl = `https://api.randomuser.me/?nat=FI&results=${count}`;
+    let promise = new Promise(fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch(err => console.log(err))
+    );
+}
 
-        const request = new XMLHttpRequest();
+var displayFiveFinnishFakeMembers = () => {
 
-        request.open('GET', apiUrl);
+//We’ll implement this!
 
-        request.onload = () => (request.status === 200) ?
+}
 
-    //XXXXXXX
+/*
 
-        request.onerror = //XXXXXXXXXXXXXXXXX
+function initiateApplication() {
 
-        request.send();
+    var requireBtn = document.querySelector('#b1');
 
-    })
+    requireBtn.addEventListener('click', displayFiveFinnishFakeMembers);
 
-    var displayFiveFinnishFakeMembers = () => {
+}
 
-    //We’ll implement this!
 
-    }
+window.addEventListener('load', () => {
 
-    
+    initiateApplication();
 
-    function initiateApplication() {
-
-        var requireBtn = document.querySelector('#b1');
-
-        requireBtn.addEventListener('click', displayFiveFinnishFakeMembers);
-
-    }
-    
-
-    window.addEventListener('load', () => {
-
-        initiateApplication();
-
-    });
+});
+*/
