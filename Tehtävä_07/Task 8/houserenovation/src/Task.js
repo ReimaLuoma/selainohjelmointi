@@ -1,33 +1,35 @@
 import React from 'react';
 
-const Task = (props) => {
-
-    const {name, tools, steps} = props;
+const Task = ( {data} ) => {
 
     return (
         <>
-            <TaskName name = {name} />
-            <TaskTools tools = {tools} />
-            <TaskSteps steps = {steps} />
+            {
+                data.map( (item, i) =>
+                    <div>
+                        <h2>{item.name}</h2>
+                        <h3>Tools:</h3>
+                        {
+                            React.createElement(
+                                "ul",
+                                null,
+                                item.tools.map((item, i) =>
+                                    React.createElement("li", { key: i }, item))
+                            )
+                        }
+                        <h3>Steps:</h3>
+                        {
+                            React.createElement(
+                                "ul",
+                                null,
+                                item.steps.map((item, i) =>
+                                    React.createElement("li", { key: i }, item))
+                            )
+                        }
+                    </div>
+                )
+            }
         </>
-    )
-};
-
-const TaskName = ({name}) => {
-    return (
-        <div>{name}</div>
-    )
-};
-
-const TaskTools = ({tools}) => {
-    return (
-        <div>{tools}</div>
-    )
-};
-
-const TaskSteps = ({steps}) => {
-    return (
-        <div>{steps}</div>
     )
 };
 

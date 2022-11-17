@@ -43,7 +43,7 @@ const data = [
 
 function App() {
   return (
-    <Task props = {data} />
+    <Task data = {data} />
   );
 }
 
