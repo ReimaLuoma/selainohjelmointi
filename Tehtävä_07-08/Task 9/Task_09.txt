@@ -1,0 +1,30 @@
+1.      Create a project according to the instruction given in the subchapter “1. Create a project””. (1 point)
+
+ 
+
+2.      If necessary, install node.js and Git on your computer. Use their commands to print the version number of the installed software.
+        Document the commands and versions here. (1 point)
+
+ 
+
+3.      Break the modules into components according to the instructions given in the subchapter “2. Break components into modules”
+        Use arrow functions. (2 points)
+
+ 
+
+4.      Explain why it does sense to break the modules into components? Try to give 4 different reasons with explanations. (2 points)
+
+ 
+
+5.      Create the webpack build according to the instructions subchapter “3. Creating a webpack build”.
+        Please note that you need to have the npm packages css-loader and style-loader installed. (2 pts)
+
+6.      Display the app successfully in browser. (1 point)
+
+ 
+
+7.      What is webpack and what does it do? (1 point)
+
+ 
+
+8.      Install create-react-app on your computer and move the above project into it. Make it work! (2 points extra!)
