@@ -4,31 +4,27 @@ const Task = ( {data} ) => {
 
     return (
         <>
-            {
-                data.map( (item, i) =>
-                    <div>
-                        <h2>{item.name}</h2>
-                        <h3>Tools:</h3>
-                        {
-                            React.createElement(
-                                "ul",
-                                null,
-                                item.tools.map((item, i) =>
-                                    React.createElement("li", { key: i }, item))
-                            )
-                        }
-                        <h3>Steps:</h3>
-                        {
-                            React.createElement(
-                                "ul",
-                                null,
-                                item.steps.map((item, i) =>
-                                    React.createElement("li", { key: i }, item))
-                            )
-                        }
-                    </div>
-                )
-            }
+            <div>
+                <h2>{data.name.toUpperCase()}</h2>
+
+                <h3>{Object.keys(data)[1].toUpperCase()}</h3>
+                
+                {React.createElement(
+                    "ul",
+                    null,
+                    data.tools.map((item, i) =>
+                        React.createElement("li", {key: i}, item))
+                )}
+
+                <h3>{Object.keys(data)[2].toUpperCase()}</h3>
+
+                {React.createElement(
+                    "ul",
+                    null,
+                    data.steps.map((item, i) =>
+                        React.createElement("li", {key: i}, item))
+                )}
+            </div>
         </>
     )
 };

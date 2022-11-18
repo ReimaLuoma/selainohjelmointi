@@ -1,4 +1,5 @@
-import Task from './Task';
+//import Task from './Task';
+import TaskList from './TaskList';
 
 const data = [
   {
@@ -42,8 +43,12 @@ const data = [
 ];
 
 function App() {
+
+  //let i = 0;
+
   return (
-    <Task data = {data} />
+    //<Task data = {data[i]} />
+    <TaskList data = {data}/>
   );
 }
 
