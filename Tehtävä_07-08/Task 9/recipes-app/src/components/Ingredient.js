@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function({ amount, measurement, name }){
+const Ingredient = ({ amount, measurement, name }) => {
     return (
         <li>
             {amount} {measurement} {name}
         </li>
     );
 }
+
+export default Ingredient;

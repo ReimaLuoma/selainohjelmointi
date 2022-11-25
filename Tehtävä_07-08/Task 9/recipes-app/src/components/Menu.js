@@ -1,7 +1,7 @@
 import React from 'react';
 import Recipe from './Recipe';
 
-function Menu({ recipes }) {
+const Menu = ({ recipes }) => {
     return (
         <article>
             <header>
@@ -9,7 +9,7 @@ function Menu({ recipes }) {
             </header>
 
             <div className='recipes'>
-                {recipes.map((recipe, i) => {
+                {recipes.map( (recipe, i) => {
                     <Recipe key={i} {...recipe} />
                 })}
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Instructions({ title, steps }){
+const Instructions = ({ title, steps }) => {
     return (
         <section className='instructions'>
 
@@ -13,3 +13,5 @@ export default function Instructions({ title, steps }){
         </section>
     );
 }
+
+export default Instructions;

@@ -1,13 +1,41 @@
-var path = require("path");
+const path = require("path");
 
 module.exports = {
-    entry: "./src/index.js",
-    output: {
-        path: path.join(__dirname, "dist", "assets"),
-        filename: "bundle.js"
-    },
+
+    entry: path.resolve(__dirname, './src/index.js'),
+
     module: {
-        rules: [{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }]
-        },
-    devtool: "#eval-source-map"
+
+        rules: [
+
+          {
+
+            test: /\.(js)$/,
+
+            exclude: /node_modules/,
+
+            use: ['babel-loader']
+
+          }
+
+        ]
+
+    },
+
+    output: {
+
+        path: path.resolve(__dirname, "./dist", "./assets"),
+
+        filename: "bundle.js"
+
+    },
+
+    devServer: {
+
+        static: path.resolve(__dirname, './dist'),
+
+    },
+
+    devtool: 'hidden-source-map'
+
 };
