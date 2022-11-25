@@ -1,11 +1,15 @@
 1.      Create a project according to the instruction given in the subchapter “1. Create a project””. (1 point)
 
- 
 
 2.      If necessary, install node.js and Git on your computer. Use their commands to print the version number of the installed software.
         Document the commands and versions here. (1 point)
 
- 
+        node --version
+        v18.12.1
+
+        git --version
+        git version 2.34.1
+
 
 3.      Break the modules into components according to the instructions given in the subchapter “2. Break components into modules”
         Use arrow functions. (2 points)
@@ -14,17 +18,23 @@
 
 4.      Explain why it does sense to break the modules into components? Try to give 4 different reasons with explanations. (2 points)
 
+        Breaking modules into components enables developer to keep data and UI separate of each other.
+        This further more enables to make the UI to be scalable depending on data size. Separation to components also provides better
+        maintainability to the code base as now the small code pieces can be worked on by different developers without causing collisions
+        as its unlikely same component needs to be worked by different devs at the same time.
  
 
 5.      Create the webpack build according to the instructions subchapter “3. Creating a webpack build”.
         Please note that you need to have the npm packages css-loader and style-loader installed. (2 pts)
 
+
 6.      Display the app successfully in browser. (1 point)
 
- 
 
 7.      What is webpack and what does it do? (1 point)
 
+        Webpack is a module bundler that bundles all the different files of same type into single static file. This bundling
+        removes dependecies in the files.
  
 
 8.      Install create-react-app on your computer and move the above project into it. Make it work! (2 points extra!)
