@@ -5,7 +5,7 @@ const IngredientsList = ({ list }) => {
     return (
         <ul className='ingredients'>
             {list.map((ingredient, i) =>
-                (<ingredient key={i} {...ingredient} />
+                (<Ingredient key={i} {...ingredient} />
             ))}
         </ul>
     )
