@@ -1,0 +1,51 @@
+1.     What is the difference between properties and state? (1 point)
+
+        Properties can change and that change is communicated to relevant components through state.
+
+
+2.     Create a project called star-ratings by using create-react-app. (1 point)
+
+ 
+
+3.     Program and display the basic star rating according to the subchapter Building a Star Rating Component. (2 points)
+
+ 
+
+    a. Create first a version that just displays static stars, 3 red and 2 grey ones. (0,5 points)
+
+    b. Follow the book and add “createArray” operation. Draw a 7-star rating. All stars can be grey. (1 point)
+
+    c. Move component Star to its own module. Take care of arranging the imports too. (0,5 points)
+
+ 
+
+4.     Add state management to Star Rating component according to the subchapter The useState Hook and test you component. (3 points)
+
+    a. Modify StarRating component to handle state. (1,5 points)
+
+    b. Modify Star component so that it is clickable. (0,5 points)
+
+    c. Use browser and React Developer tools to test your StarRating component. (1 point)
+
+ 
+
+5.     Refactor your Star Rating component according to the instruction given in subchapter “Refactoring for Advanced Reusability”. (1 point)
+
+ 
+
+6.      Send the state down a component tree by programming the example in the subchapter “Sending State Down a Component Tree”.  (2 points)
+
+ 
+
+    a. Program the ColorList example. (1 point)
+
+    b. Why it does make sense to maintain the state in only one component?
+
+        While debugging it is easier to locate problem and solve it when states are only in one place. Multiple different state
+        locations might create hard to maintain codebase and add extra level of difficulty to debugging.
+
+    c. Can you list any other solutions to maintain state?
+
+        Context allows state to be maintained in single location and avoids passing the information through all components
+        in between who don't need the information themselves. This simplifies component relations and maintaining data and state
+        flow throughout the application.

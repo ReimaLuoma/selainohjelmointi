@@ -1,0 +1,60 @@
+1.     Explain (2 pts)
+
+    a.      What is JSX
+
+            JSX is syntax extension for javascript. It bridges the difference between HTML and React.
+            Basically we can write familiar HTML like syntax inside React.
+
+    b.      What is the difference between HTML- and JSX-elements?
+
+            While in HTML one can return multiple elements, in JSX that is essentially javascript functions can still only return single element.
+            HTML has attributes and in JSX there are props.
+            Naming convention in HTML is totally up to one's preferences while in JSX all attributes and events are written in camelCase.
+            HTML has class attribute but in JSX we have to use className as prop. This is due to the fact JSX is javascript and in it class is reserved word.
+            HTML has opening and closing tags and fewer self-closing tags but in JSX any element can be written self-closing.
+            JSX also allows to nest other JSX elements inside one.
+
+    c.      Why do we need to use Babel with JSX?
+
+            Browsers don't understand JSX as is so we need a way to translate it to pure React form that browsers can understand.
+            This is where Babel comes in as a translator.
+
+2.     JSX-Hello (1 pts)
+    Create a JSX component <Hello/> that renders Hello World!
+    -> component_helloworld.js
+
+3.     JSX-Advanced-Hello (1 pts)
+    Modify component from previous task so that it is actual content of a message is passed to the component as a property
+    -> component_helloworld.js
+ 
+
+4.     JSX-Nested hello (2 pts)
+    Create a component called HelloList that is a container for 3 Hello-components from task 2.
+    -> component_helloworld.js
+ 
+
+5.     JSX Components (4 pts)
+    Create an JSX application for a house renovation. Data structure for a application is:
+    
+        data = [
+        {
+            “name”: “Painting walls”,
+            “tools”: [
+                “Brushes”,
+                “Masking tape”,
+                “Paint bucket”
+            ],
+            “steps”: [
+                “Remove old paint”,
+                “Fill holes and tracks with filler”,
+                “Paint”,
+                “Repaint”
+            ]
+        }
+
+    a.      Create at least 2 renovation elements to data structure
+            -> data.txt
+
+    b.      Create a component called Task that represents tasks in a renovation project. Tasks are created from our data.
+
+    c.      Create a component called TaskList that shows all task-components for a renovation project.

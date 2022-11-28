@@ -1,0 +1,53 @@
+1.  JS-REACT-T-1 (1 point)
+
+    What is React?
+    
+    React is a javascript library to create interactive user interfaces. It is declarative, efficient and flexible. It is developed by Facebook.
+
+2. JS-REACT-P-HELLO-WORLD-1 (1 point)
+
+    Make your first React.js application that renders the following greeting to a web page as h2 element:
+
+                        Hello Brave World!
+
+3. JS-REACT-P-CREATEELEMENT-1 (2 points)
+
+    Develop a web application that renders an h2 header and an unordered list with their list items.
+    You can see the result in the picture on the right. Use multiple createElement operation calls like in the example in the book.
+    Please note that all the unordered list items belong to a class called single-threat.
+
+    -> helloworld-folder
+
+4. JS-REACT-P-CREATEELEMENT-2 (2 points)
+
+    Modify the code of the JS-REACT-P-CREATEELEMENT-1 task above so that you fill the list item values by using an array sqlsThreats
+    instead of hardcoding the strings. Use JavaScript’s Array.map function. Add also the key properties. Check browser console for
+    possible warnings. You can search help from the book example listings.
+
+    -> helloworld-folder
+
+5.  JS-REACT-T-2 (1 point)
+
+    What are?
+
+    a.      react elements
+            
+            React elements are html DOM elements in React form. They are used to build HTML DOM elements through React.
+
+    b.      react components
+
+            Where as elements are small pieces the components are build from multiple elements.
+            Point of components is that they allow reuse of UI element with different data.
+
+6. JS-REACT-P-COMPONENTS-1 (2 points)
+
+    Create React.js component ThreatList using a function.  Pass the sqlThreats to this components as a property.
+    -> helloworld -folder
+
+7.  JS-REACT-T-RENDERING-1 (1 point)
+
+    What does it mean that ReactDOM.render works smart?
+
+    ReactDOM.render lets developers to keep data and UI elements separate. This results that we can work our data and UI will update after it.
+    ReactDOM.render update only the smallest amount of elements required to display the data changes. Basically changing data doesn't necessarily
+    mean whole page will update but only one element.
