@@ -6,9 +6,9 @@ const Instructions = ({ title, steps }) => {
 
             <h2>{title}</h2>
 
-            {steps.map((s, i) => {
+            {steps.map((s, i) => (
                 <p key={i}>{s}</p>
-            })}
+            ))}
 
         </section>
     );

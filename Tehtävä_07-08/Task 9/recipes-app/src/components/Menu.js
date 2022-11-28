@@ -9,9 +9,9 @@ const Menu = ({ recipes }) => {
             </header>
 
             <div className='recipes'>
-                {recipes.map( (recipe, i) => {
+                {recipes.map( (recipe, i) => (
                     <Recipe key={i} {...recipe} />
-                })}
+                ))}
             </div>
         </article>
     );
